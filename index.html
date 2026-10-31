@@ -10,35 +10,38 @@
   <script src="script.js" defer></script>
 </head>
 <body>
-  <div class="announcement" role="note">
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="page-header">
+  <div class="announcement">
     <span class="announcement-dot"></span>
     <span>Personal Android utility · private by default</span>
     <span class="announcement-line"></span>
     <span class="announcement-detail">Made for the videos you already own</span>
   </div>
 
-  <header class="site-header">
+  <div class="site-header">
     <a class="brand" href="index.html" aria-label="Auto YT Uploader home">
       <img class="brand-logo" src="logo.svg" alt="" width="31" height="31">
       <span class="brand-name"><strong>Auto YT</strong> Uploader</span>
     </a>
 
-    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation">
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">
       <span></span><span></span>
     </button>
 
     <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
       <a href="#how-it-works">How it works</a>
-      <a href="#privacy">Privacy & access</a>
+      <a href="#privacy">Privacy &amp; access</a>
       <a href="privacy.html">Privacy policy</a>
       <a class="nav-pill" href="#how-it-works">See the flow <span aria-hidden="true">↘</span></a>
     </nav>
+  </div>
   </header>
 
-  <main>
+  <main id="main" tabindex="-1">
     <section class="hero section-shell" aria-labelledby="hero-title">
       <div class="hero-copy">
-        <p class="eyebrow"><span class="eyebrow-rule"></span>ANDROID UTILITY · PRIVATE BY DEFAULT</p>
+        <p class="eyebrow"><span class="eyebrow-rule"></span>Android utility · private by default</p>
         <h1 id="hero-title">Your videos have<br><em>a place to go.</em></h1>
         <p class="hero-lede">Auto YT Uploader quietly sends selected videos to your own YouTube channel — private, organized, and out of the way.</p>
         <div class="hero-actions">
@@ -51,7 +54,7 @@
         </div>
       </div>
 
-      <div class="hero-visual" aria-label="Illustration of a private video upload flow">
+      <div class="hero-visual" role="img" aria-label="Illustration of the app on a phone: a video uploads privately, then moves to the Uploaded album.">
         <div class="sun-disc" aria-hidden="true"></div>
         <div class="orbit orbit-one" aria-hidden="true"></div>
         <div class="orbit orbit-two" aria-hidden="true"></div>
@@ -92,57 +95,59 @@
 
     <section class="proof-strip section-shell" aria-label="Key product promises">
       <div class="proof-intro"><span class="scribble-arrow" aria-hidden="true">↘</span><span>Three calm steps.<br>One less thing to remember.</span></div>
-      <div class="proof-item"><span class="proof-number">01</span><strong>Choose folders</strong><small>Tell the app where to look.</small></div>
-      <div class="proof-item"><span class="proof-number">02</span><strong>Upload privately</strong><small>Only to your own channel.</small></div>
-      <div class="proof-item"><span class="proof-number">03</span><strong>Move on</strong><small>Finished files go to Uploaded.</small></div>
+      <ol class="proof-list" role="list">
+        <li class="proof-item"><span class="proof-number" aria-hidden="true">01</span><strong>Choose folders</strong><small>Tell the app where to look.</small></li>
+        <li class="proof-item"><span class="proof-number" aria-hidden="true">02</span><strong>Upload privately</strong><small>Only to your own channel.</small></li>
+        <li class="proof-item"><span class="proof-number" aria-hidden="true">03</span><strong>Move on</strong><small>Finished files go to Uploaded.</small></li>
+      </ol>
     </section>
 
     <section class="steps section-shell" id="how-it-works" aria-labelledby="steps-title">
       <div class="section-heading">
-        <p class="eyebrow"><span class="eyebrow-rule"></span>THE SIMPLE VERSION</p>
+        <p class="eyebrow"><span class="eyebrow-rule"></span>The simple version</p>
         <h2 id="steps-title">A small ritual for<br><em>a crowded camera roll.</em></h2>
       </div>
-      <div class="step-list">
-        <article class="step-card">
-          <div class="step-topline"><span class="step-index">01</span><span class="step-icon icon-folder" aria-hidden="true">▰</span></div>
+      <ol class="step-list" role="list">
+        <li class="step-card">
+          <div class="step-topline"><span class="step-index" aria-hidden="true">01</span><span class="step-icon icon-folder" aria-hidden="true">▰</span></div>
           <h3>Point it at a folder</h3>
           <p>Choose the folders you want Auto YT Uploader to watch. Keep your camera roll exactly where it is.</p>
-          <span class="step-caption">YOUR CHOICE, ALWAYS</span>
-        </article>
-        <article class="step-card step-card-featured">
-          <div class="step-topline"><span class="step-index">02</span><span class="step-icon icon-cloud" aria-hidden="true">↑</span></div>
+          <span class="step-caption">Your choice, always</span>
+        </li>
+        <li class="step-card step-card-featured">
+          <div class="step-topline"><span class="step-index" aria-hidden="true">02</span><span class="step-icon icon-cloud" aria-hidden="true">↑</span></div>
           <h3>Let it upload quietly</h3>
           <p>Videos travel to your own YouTube channel as private uploads. Nothing is published for the world to see.</p>
-          <span class="step-caption">PRIVATE FROM THE START</span>
-        </article>
-        <article class="step-card">
-          <div class="step-topline"><span class="step-index">03</span><span class="step-icon icon-archive" aria-hidden="true">↗</span></div>
+          <span class="step-caption">Private from the start</span>
+        </li>
+        <li class="step-card">
+          <div class="step-topline"><span class="step-index" aria-hidden="true">03</span><span class="step-icon icon-archive" aria-hidden="true">↗</span></div>
           <h3>Find the finished ones</h3>
           <p>When a video is done, the app moves it into an album called Uploaded on your phone.</p>
-          <span class="step-caption">A LITTLE MORE ROOM</span>
-        </article>
-      </div>
+          <span class="step-caption">A little more room</span>
+        </li>
+      </ol>
     </section>
 
     <section class="privacy section-shell" id="privacy" aria-labelledby="privacy-title">
       <div class="privacy-panel">
         <div class="privacy-main">
-          <p class="eyebrow eyebrow-light"><span class="eyebrow-rule"></span>THE BOUNDARIES MATTER</p>
+          <p class="eyebrow eyebrow-light"><span class="eyebrow-rule"></span>The boundaries matter</p>
           <h2 id="privacy-title">A direct line.<br><em>Nothing extra.</em></h2>
           <p>Auto YT Uploader is built for one personal job: moving your videos to your own YouTube channel. It does not need a backstage pass to the rest of your account.</p>
           <a class="button button-light" href="privacy.html">Read the full privacy policy <span aria-hidden="true">↗</span></a>
         </div>
         <div class="privacy-list">
-          <div class="privacy-row"><span class="privacy-badge">01</span><div><h3>Your channel only</h3><p>Uploads are sent to the YouTube channel belonging to the Google account you sign in with.</p></div></div>
-          <div class="privacy-row"><span class="privacy-badge">02</span><div><h3>Permission for uploading</h3><p>Google sign-in uses the YouTube upload permission only for the videos you choose to upload.</p></div></div>
-          <div class="privacy-row"><span class="privacy-badge">03</span><div><h3>Private by default</h3><p>Each uploaded video is set to private, so it stays for you unless you decide otherwise.</p></div></div>
+          <div class="privacy-row"><span class="privacy-badge" aria-hidden="true">01</span><div><h3>Your channel only</h3><p>Uploads are sent to the YouTube channel belonging to the Google account you sign in with.</p></div></div>
+          <div class="privacy-row"><span class="privacy-badge" aria-hidden="true">02</span><div><h3>Permission for uploading</h3><p>Google sign-in uses the YouTube upload permission only for the videos you choose to upload.</p></div></div>
+          <div class="privacy-row"><span class="privacy-badge" aria-hidden="true">03</span><div><h3>Private by default</h3><p>Each uploaded video is set to private, so it stays for you unless you decide otherwise.</p></div></div>
         </div>
       </div>
     </section>
 
     <section class="closing section-shell" aria-labelledby="closing-title">
       <div class="closing-mark" aria-hidden="true"><span></span><span></span><span></span></div>
-      <p class="eyebrow"><span class="eyebrow-rule"></span>FOR THE PERSON BEHIND THE CAMERA</p>
+      <p class="eyebrow"><span class="eyebrow-rule"></span>For the person behind the camera</p>
       <h2 id="closing-title">Set it once.<br><em>Let your camera roll catch up.</em></h2>
       <p class="closing-copy">A personal Android app for making private video backups feel less like a chore.</p>
       <div class="closing-links"><a class="button button-primary" href="terms.html">View terms of service <span aria-hidden="true">↗</span></a><a class="button button-text" href="privacy.html">Privacy policy <span aria-hidden="true">↗</span></a></div>
